@@ -76,7 +76,7 @@ int main(){
 			//printf("%d", falha);
 			for(int j = 0; j < strTam && falha == false; j++){
 				int coluna = 0;
-				printf("%d", Vertex);
+				//printf("%d", Vertex);
 				while(coluna < Vertex){
 					if(Aut[linha][coluna][String[j]] == 1){
 						printf("%d", coluna);
