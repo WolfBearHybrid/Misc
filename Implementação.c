@@ -59,7 +59,7 @@ int main(){
 	
 	PrintMatrix(Vertex, Edges, Aut);
 	
-	int confirm=2;
+	int confirm=1;
 	
 	do {
 		int strTam, linha;
@@ -68,7 +68,8 @@ int main(){
 		printf("\n\nInsira o numero de instrucoes a ser reconhecido seguido da cadeia a ser reconhecida: \n");
 		scanf("%d", &strTam);
 		int String[strTam];
-		scanf("%s", String);
+                for(int i = 0; i < strTam; i++)
+		    scanf("%d", String[i]);
 		
 		for(int s = 0; s < Starts_Quantity && recon == false; s++){
 			linha = Starts[s];	
